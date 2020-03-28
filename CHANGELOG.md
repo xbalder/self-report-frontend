@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.5.0] 2020-03-28
+
+### Added
+
+- reCAPTCHA
+
+### Changed
+
+- Reporting is now done through a post function (reCAPTCHA compatible)
+- Extract instance configuration in environment files
+
 ## [0.4.4] 2020-03-27
 
 ### Fixed

@@ -33,13 +33,18 @@
       </div>
       <hr>
       <div class="row align-items-center justify-content-md-between">
-        <div class="col-md-6">
+        <div class="col-md-12">
           <div class="copyright">
             &copy; {{year}}
             {{ $t('app.title') }} (v{{ version }}) | Built with the awesome theme of
             <a href="https://www.creative-tim.com/product/vue-argon-design-system">Creative Tim</a>
           </div>
 
+          <div class="copyright">
+            This site is protected by reCAPTCHA and the Google
+            <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+            <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+          </div>
         </div>
       </div>
     </div>
