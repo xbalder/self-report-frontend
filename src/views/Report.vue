@@ -375,6 +375,10 @@
             }),
           });
 
+          if (!response.ok) {
+            throw new Error('could not report');
+          }
+
           localStorage.setItem('report-data', JSON.stringify(this.reportData));
           this.forceReportAgain = false;
 
