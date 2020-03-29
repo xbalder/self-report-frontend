@@ -53,10 +53,12 @@ const languages = [];
 for (let language of configuredLanguages) {
   try {
     messages[language] = require(`./assets/translations/${language}.json`);
-    languages.push({
-      id: language,
-      label: messages[language].language,
-    });
+    if (messages[language].app.language) {
+      languages.push({
+        id: language,
+        label: messages[language].app.language,
+      });
+    }
   } catch (error) {
     console.error(`Could not load language '${language}': ${error}`)
   }

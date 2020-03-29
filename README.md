@@ -66,9 +66,10 @@ The frontend uses vue-cli. Please refer to the [official documentation](https://
 
 1. Setup the data source and geocoding data URLs
 2. Set the recaptcha key (not the secret) with the value from the reCAPTCHA console.
-3. Set the github repository of your fork for the issues reporting
-4. Set the social links for the desired platforms
-5. Configure the URL for the backend endpoint to your backend instance.
+3. List the languages you need
+4. Set the github repository of your fork for the issues reporting
+5. Set the social links for the desired platforms
+6. Configure the URL for the backend endpoint to your backend instance.
 
 ## Develop
 
