@@ -310,7 +310,10 @@
 
         _map = L.map('leaflet-map', {
           preferCanvas: true,
-        }).setView([46.7, 8.2], 8);
+        }).setView([
+          process.env.VUE_APP_VISU_MAP_CENTER_LATITUDE,
+          process.env.VUE_APP_VISU_MAP_CENTER_LONGITUDE
+        ], process.env.VUE_APP_VISU_MAP_ZOOM_LEVEL);
 
         _tileLayers.push(L.tileLayer(this.mapBaseLayerUrl, {
           attribution: `&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors`,
