@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.5.2] 2020-03-29
+
+### Added
+
+- Languages are now configurable
+
 ## [0.5.1] 2020-03-29
 
 ### Changed
