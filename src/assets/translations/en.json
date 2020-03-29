@@ -1,6 +1,6 @@
 {
-    "language":"English",
     "app": {
+        "language":"English",
         "title": "Self report",
         "footer": {
             "support": "Thank you for supporting us!",
