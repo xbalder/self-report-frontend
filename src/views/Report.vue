@@ -182,7 +182,6 @@
                              icon="fa fa-send">
                   {{ $t('report.send') }} <i v-if="sending" class="fa fa-spinner fa-pulse"></i>
                 </base-button>
-                <p><small v-if="dev">Development report, will be ignored in aggregation</small></p>
               </div>
             </div>
 
@@ -306,8 +305,6 @@
           lastReport: null,
         },
         sending: false,
-
-        dev: process.env.NODE_ENV === 'development',
 
         /*
         * 0 = not sick
