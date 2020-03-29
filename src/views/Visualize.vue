@@ -45,6 +45,7 @@
             <div id="leaflet-map"></div>
             <p v-if="lastUpdate"><small>{{ $t('visualize.lastUpdate') }} {{ lastUpdate.toLocaleString() }}</small></p>
             <!--            <p>{{totalReports}} reports overall</p>-->
+
           </div>
 
         </div>
@@ -165,7 +166,7 @@
             opacity: 0.3,
             defaultEnabled: false,
           },
-        ]
+        ],
       };
     },
     async mounted() {
@@ -277,7 +278,18 @@
         }).addTo(_map));
 
         try {
-          _data = await this.loadData(this.dataSourceUrl);
+          const data = await this.loadData(this.dataSourceUrl);
+
+          for (const entry of data) {
+            entry.total_healthy = +entry.total_healthy;
+            entry.total_sick_guess_no_corona = +entry.total_sick_guess_no_corona;
+            entry.total_sick_guess_corona = +entry.total_sick_guess_corona;
+            entry.total_sick_corona_confirmed = +entry.total_sick_corona_confirmed;
+            entry.total_recovered_not_confirmed = +entry.total_recovered_not_confirmed;
+            entry.total_recovered_confirmed = +entry.total_recovered_confirmed;
+          }
+          _data = data;
+
           this.dataLoaded = true;
 
           this.allowedDates = this.computeAllowedDates(_data);
@@ -312,12 +324,6 @@
             continue;
           }
 
-          entry.total_healthy = +entry.total_healthy;
-          entry.total_sick_guess_no_corona = +entry.total_sick_guess_no_corona;
-          entry.total_sick_guess_corona = +entry.total_sick_guess_corona;
-          entry.total_sick_corona_confirmed = +entry.total_sick_corona_confirmed;
-          entry.total_recovered_not_confirmed = +entry.total_recovered_not_confirmed;
-          entry.total_recovered_confirmed = +entry.total_recovered_confirmed;
           totalReports += entry.total_healthy +
             entry.total_sick_guess_no_corona +
             entry.total_sick_guess_corona +
@@ -409,7 +415,7 @@
           const label = `<span style="color: ${layerDefinition.color}">${this.$i18n.t(layerDefinition.label)}</span>`;
           overlays[label] = layerDefinition.data.layer;
         }
-      }
+      },
     }
   };
 
