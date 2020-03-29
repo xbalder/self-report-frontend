@@ -26,7 +26,7 @@ The following things are needed:
 1. Go to https://www.google.com/recaptcha/admin/create
 2. Fill th form :
     - Use reCAPTCHA version 3
-    - Add your domain name (also add 'localhost' if used for development)
+    - Add your domain name (also add 'localhost' if used for development), if you're hosting the frontend on Firebase, you'll need to know its domain name too
     - Send
 3. Copy the site key, it will be useful for the frontend configuration
 
