@@ -14,7 +14,7 @@ The following things are needed:
 
 - A domain name (e.g. covid-self-report.ch)
 - A hosting server (we are using firebase, but it's not mandatory)
-- An instance of [self-report-backend](https://github.com/ch-covid-19/self-report-backend) running
+- An instance of [self-report-backend](https://github.com/ch-covid-19/self-report-backend) running (or develop your own backend)
 - A reCAPTCHA API configuration
 - A reports data source
 - A geocoding data source
