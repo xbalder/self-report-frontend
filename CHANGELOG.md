@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.1] 2020-03-29
+
+### Changed
+
+- Removing embedded geocoding source
+- Remove postal code strict verification
+
 ## [0.5.0] 2020-03-28
 
 ### Added

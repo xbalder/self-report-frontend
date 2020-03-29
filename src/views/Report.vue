@@ -245,8 +245,6 @@
   import Modal from '@/components/Modal.vue';
   import newGithubIssueUrl from 'new-github-issue-url';
 
-  import {geocoding} from '@/assets/geocoding';
-
   export default {
     name: "report",
     components: {
@@ -318,7 +316,7 @@
     },
     computed: {
       validPostalCode: function () {
-        return (this.reportData.postalCode.length === 4 && !isNaN(this.reportData.postalCode) && geocoding[+this.reportData.postalCode]);
+        return (this.reportData.postalCode.length === 4 && !isNaN(this.reportData.postalCode));
       },
       daysSinceLastReport: function () {
 
