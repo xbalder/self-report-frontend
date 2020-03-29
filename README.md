@@ -83,6 +83,19 @@ VUE_APP_VISU_LAST_UPDATE_URL=https://raw.githubusercontent.com/ch-covid-19/datas
 
 ```
 
+## Translations
+
+Translations are done with the online [POEditor](https://poeditor.com/projects/view?id=327349) service.
+
+The process for translators is the following :
+
+- New keys are added in the frontend by the developers
+- New keys are imported in POEditor (done automatically, but with manual trigger, responsibility to be defined)
+- Translators are informed of the new keys by notifications
+- Translators translates the new keys in POEditor
+- Translations are exported in the frontend (done automatically, but with manual trigger, responsibility to be defined)
+- The next release includes the new translations
+
 ## Contribute
 
 Contributions are welcome through merge requests.
