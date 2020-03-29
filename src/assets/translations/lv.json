@@ -1,5 +1,6 @@
 {
     "app": {
+        "language":"Latviešu valoda",
         "title": "Pašziņojums",
         "footer": {
             "support": "Paldies, ka atbalstījāt mūs!",

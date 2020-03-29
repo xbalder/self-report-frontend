@@ -1,5 +1,6 @@
 {
     "app": {
+        "language":"Italiano",
         "title": "Self report",
         "footer": {
             "support": "La ringraziamo per il suo sopporto!",

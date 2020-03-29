@@ -1,5 +1,6 @@
 {
     "app": {
+        "language":"Deutsch",
         "title": "Self report",
         "footer": {
             "support": "Vielen Dank für Ihre Mitarbeit!",

@@ -1,6 +1,7 @@
 {
     "app": {
-        "title": "Auto-évaluation/S'auto évaluer?",
+        "language":"Français",
+        "title": "Self-report",
         "footer": {
             "support": "Merci pour votre soutien!",
             "contact": "Contactez-nous sur l'une de ces plateformes.",
