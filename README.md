@@ -25,9 +25,9 @@ The following things are needed:
 
 1. Go to https://www.google.com/recaptcha/admin/create
 2. Fill th form :
-  - Use reCAPTCHA version 3
-  - Add your domain name (also add 'localhost' if used for development)
-  - Send
+    - Use reCAPTCHA version 3
+    - Add your domain name (also add 'localhost' if used for development)
+    - Send
 3. Copy the site key, it will be useful for the frontend configuration
 
 #### Report data source
