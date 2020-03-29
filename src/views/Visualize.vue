@@ -242,7 +242,21 @@
             download: true,
             header: true,
             error: (err, file, inputElem, reason) => reject(`Could not get map data<br>${err}`),
-            complete: (content, file) => resolve(content.data),
+            complete: (content, file) => {
+
+              const data = content.data;
+
+              for (const entry of data) {
+                entry.total_healthy = +entry.total_healthy;
+                entry.total_sick_guess_no_corona = +entry.total_sick_guess_no_corona;
+                entry.total_sick_guess_corona = +entry.total_sick_guess_corona;
+                entry.total_sick_corona_confirmed = +entry.total_sick_corona_confirmed;
+                entry.total_recovered_not_confirmed = +entry.total_recovered_not_confirmed;
+                entry.total_recovered_confirmed = +entry.total_recovered_confirmed;
+              }
+
+              resolve(data);
+            }
           });
         });
       },
@@ -278,18 +292,7 @@
         }).addTo(_map));
 
         try {
-          const data = await this.loadData(this.dataSourceUrl);
-
-          for (const entry of data) {
-            entry.total_healthy = +entry.total_healthy;
-            entry.total_sick_guess_no_corona = +entry.total_sick_guess_no_corona;
-            entry.total_sick_guess_corona = +entry.total_sick_guess_corona;
-            entry.total_sick_corona_confirmed = +entry.total_sick_corona_confirmed;
-            entry.total_recovered_not_confirmed = +entry.total_recovered_not_confirmed;
-            entry.total_recovered_confirmed = +entry.total_recovered_confirmed;
-          }
-          _data = data;
-
+          _data = await this.loadData(this.dataSourceUrl);
           this.dataLoaded = true;
 
           this.allowedDates = this.computeAllowedDates(_data);
