@@ -49,11 +49,7 @@
             <i class="ni ni-bold-down"></i>
             <span class="nav-link-inner--text">Language</span>
           </a>
-
-          <a href="" class="dropdown-item" @click.prevent="setLocale('de')">Deutsch</a>
-          <a href="" class="dropdown-item" @click.prevent="setLocale('fr')">Français</a>
-          <a href="" class="dropdown-item" @click.prevent="setLocale('it')">Italiano</a>
-          <a href="" class="dropdown-item" @click.prevent="setLocale('en')">English</a>
+          <a v-for="language of languages" href="" class="dropdown-item" @click.prevent="setLocale(language.id)">{{ language.label }}</a>
         </base-dropdown>
 
         <li v-if="socialLinkWhatsapp" class="nav-item">
