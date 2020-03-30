@@ -1,5 +1,7 @@
 # COVID Self report
 
+![CI](https://github.com/ch-covid-19/self-report-frontend/workflows/CI/badge.svg)
+
 This repository hosts the frontend code of the covid-self-report project.
 
 This project is based on [Vue.js](https://github.com/vuejs/) and vue-cli, using [Argon design template from Creative Tim](https://www.creative-tim.com/product/argon-design-system).
