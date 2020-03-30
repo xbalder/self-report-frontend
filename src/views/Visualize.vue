@@ -233,7 +233,7 @@
                 }
 
                 if (location.longitude && location.latitude) {
-                  location.coordinates = [+location.longitude, +location.latitude];
+                  location.coordinates = [+location.latitude, +location.longitude];
                 } else {
                   continue;
                 }
