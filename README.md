@@ -66,6 +66,7 @@ Please be sure to use 'yarn' instead of 'npm' as package manager.
 
 #### Configuration
 
+1. Choose you location selector (default: postal-code) (only postal code available for now)
 1. Setup the data source and geocoding data URLs
 2. Set the map default position and zoom level
 3. Set the recaptcha key (not the secret) with the value from the reCAPTCHA console.
