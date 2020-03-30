@@ -21,13 +21,12 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-
-    - name: Install yarn
-      run: npm install -g yarn
-      
-    - name: Install dependencies
-      run: yarn install
-
-    - name: Build the app
-      run: yarn build
+    
+    - uses: borales/actions-yarn@v2.0.0
+      with:
+        cmd: install # will run `yarn install` command
+        
+    - uses: borales/actions-yarn@v2.0.0
+      with:
+        cmd: build # will run `yarn build` command
       
