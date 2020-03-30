@@ -58,9 +58,11 @@ The frontend uses vue-cli. Please refer to the [official documentation](https://
 
 ### Setup
 
+Please be sure to use 'yarn' instead of 'npm' as package manager.
+
   1. Clone this repository
   2. Create a `.env` file based on the `.env.example` file and fill it with your configuration. See below to learn more about the configuration.
-  4. Run `npm run serve` to test locally and `npm run build` to build application
+  4. Run `yarn serve` to test locally and `yarn build` to build application
 
 #### Configuration
 
