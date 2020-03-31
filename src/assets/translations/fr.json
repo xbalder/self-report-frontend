@@ -1,14 +1,14 @@
 {
     "app": {
-        "language":"Français",
-        "title": "Self-report",
+        "title": "s'auto évaluer?",
         "footer": {
             "support": "Merci pour votre soutien!",
             "contact": "Contactez-nous sur l'une de ces plateformes.",
             "whatsappshare": "Signalez votre état de santé pour nous aider à lutter contre le Covid-19 !"
         },
         "yes": "Oui",
-        "no": "Non"
+        "no": "Non",
+        "language": "Français"
     },
     "renewReport": {
         "comingBack": "Merci d'être de retour",
@@ -24,7 +24,7 @@
         "how": "Comment allez-vous?",
         "healthy": "Je vais bien",
         "sick": "Je suis malade",
-        "contract": "Avez-vous été infecté par la {maladie} puis guéri?",
+        "contract": "Avez-vous été infecté par le Covid-19 puis guéri?",
         "contractNo": "Non",
         "contractYesRecovered": "Oui et je suis guéri",
         "notSick": "Super! Restez à la maison même si vous n'êtes pas malade, pour éviter la propagation du virus.",
@@ -40,12 +40,12 @@
         "symptomTasteSmell": "Troubles du goût ou de l'odorat",
         "symptomOthers": "Autres",
         "diagnostic": "Quel est votre diagnostic?",
-        "contracted": "Au vu de vos contacts sociaux récents, pensez-vous avoir contracté le {disease} ?",
+        "contracted": "Au vu de vos contacts sociaux récents, pensez-vous avoir contracté le Covid-19 ?",
         "contractedNo": "Non",
         "contractedProbably": "Probablement",
         "contractedOfficial": "C'est officiel",
         "contractedOfficialConfirm": "Confirmez",
-        "contractedOfficialConfirmText": "Avez-vous été testé officiellement positif à la {maladie} par une institution médicale reconnue ?",
+        "contractedOfficialConfirmText": "Avez-vous été testé officiellement positif au Covid-19 par une institution médicale reconnue ?",
         "locationQuestion": "Où vivez-vous ?",
         "locationPlaceholder": "Code postal (NPA)",
         "locationValidError": "Veuillez saisir un code postal suisse valide",
