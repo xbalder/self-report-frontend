@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.1.2] 2020-03-31
+
+### Changed
+
+- Restore EN / FR FAQ translations
+
 ## [1.1.1] 2020-03-31
 
 ### Changed
