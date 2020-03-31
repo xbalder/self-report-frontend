@@ -256,26 +256,6 @@
       LocationFromPostalCode,
       Modal
     },
-    async mounted() {
-
-      const reportData = localStorage.getItem('report-data');
-      if (reportData !== null) {
-        this.reportData = JSON.parse(reportData);
-      }
-
-      if (this.reportData.sessionId === null) {
-        this.reportData.sessionId = uuidv4();
-      }
-
-      if (this.reportData.diagnostic !== null) {
-        this.reportData.diagnostic = +this.reportData.diagnostic;
-      }
-
-      if (this.reportData.lastReport !== null) {
-        this.reportData.lastReport = Date.parse(this.reportData.lastReport);
-      }
-
-    },
     data() {
       return {
         disease: 'Covid-19',
@@ -329,6 +309,26 @@
 
         return Math.round(Math.abs((this.reportData.lastReport - new Date()) / (24 * 60 * 60 * 1000)));
       },
+    },
+    async mounted() {
+
+      const reportData = localStorage.getItem('report-data');
+      if (reportData !== null) {
+        this.reportData = JSON.parse(reportData);
+      }
+
+      if (this.reportData.sessionId === null) {
+        this.reportData.sessionId = uuidv4();
+      }
+
+      if (this.reportData.diagnostic !== null) {
+        this.reportData.diagnostic = +this.reportData.diagnostic;
+      }
+
+      if (this.reportData.lastReport !== null) {
+        this.reportData.lastReport = Date.parse(this.reportData.lastReport);
+      }
+
     },
     methods: {
 

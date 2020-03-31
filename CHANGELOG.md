@@ -6,6 +6,10 @@
 
 - Adding other countries sites
 
+### Fixed
+
+- Postal code validation on load
+
 ## [1.2.0] 2020-03-31
 
 ### Fixed
