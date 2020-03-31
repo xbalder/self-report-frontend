@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.1.1] 2020-03-31
+
+### Changed
+
+- Translations updated
+
 ## [1.1.0] 2020-03-30
 
 ### Added
