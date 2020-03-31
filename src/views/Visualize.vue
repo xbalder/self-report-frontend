@@ -319,7 +319,17 @@
           attribution: `&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors`,
         }).addTo(_map));
 
+        console.log(`Loading dataset from ${this.dataSourceUrl}`);
         _data = await this.loadData(this.dataSourceUrl);
+
+        while(!_data.reverse().some(l => l.date === this.dateFilter)) {
+          const previousDay = new Date(this.dateFilter);
+          previousDay.setDate(previousDay.getDate() - 1);
+          const previousDayString = previousDay.toISOString().split('T')[0];
+          console.log(`No data for ${this.dateFilter}, fallback to ${previousDayString}`);
+          this.dateFilter = previousDayString;
+        }
+
         this.dataLoaded = true;
 
         this.allowedDates = this.computeAllowedDates(_data);

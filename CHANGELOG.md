@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.1.3] 2020-03-31
+
+### Added
+
+- If no data is available for the current day, fallback to last date with data
+
 ## [1.1.2] 2020-03-31
 
 ### Changed
