@@ -2,6 +2,10 @@
 
 ## [1.1.3] 2020-03-31
 
+### Fixed
+
+- Do not show next page if send is not a success
+
 ### Added
 
 - If no data is available for the current day, fallback to last date with data
