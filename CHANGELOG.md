@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.3.0] 2020-03-31
+
+### Added
+
+- Adding other countries sites
+
 ## [1.2.0] 2020-03-31
 
 ### Fixed
