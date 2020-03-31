@@ -88,6 +88,10 @@
         "improvement": "for improvements or you want to report an error, please contact us on Facebook."
     },
     "faq": {
-        "title": "FAQ"
+        "title": "FAQ",
+        "goalQuestion": "What is the goal of this app?",
+        "goalResponse": "We aim to provide a visualization of the progression of the Covid-19 pandemic in our country. How can we 'flatten the curve' without having a statistical idea of the current situation? Help us by publishing your health status.",
+        "othersQuestion": "How do I report other members of my family?",
+        "othersResponse": "We are working on this issue. For now, you can use a different devices (phones, tablet, computer) for each member of your family."
     }
 }

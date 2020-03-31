@@ -88,6 +88,10 @@
         "improvement": "ou si vous souhaitez signaler une erreur, veuillez nous contacter sur Facebook."
     },
     "faq": {
-        "title": "FAQ"
+        "title": "FAQ",
+        "goalQuestion": "Quel est le but de cette application?",
+        "goalResponse": "Nous souhaitons fournir une visualisation de la progression du Covid-19 dans notre pays. Comment pouvons-nous 'applanir la courbe' sans avoir une représentation statistique de la situation actuelle? Aidez-nous en publiant votre état de santé",
+        "othersQuestion": "Comment puis-je publier le statut d'autres membres de ma famille?",
+        "othersResponse": "Nous somme actuellement entrain de travailler sur ce point. En attendant, vous pouvez utiliser un appareil différent (téléphone, tablette, ordinateur) pour chaque membre de votre famille."
     }
 }
